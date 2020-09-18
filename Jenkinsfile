@@ -47,7 +47,13 @@ pipeline {
                 }
             }
         }  
-              
+	//just the concept
+	stage('Provision EKS Cluster') {
+            steps{       
+		  sh "terraform apply"
+            }
+        }
+        //just the concept 
         stage('Deploy to EKS') {
             steps{
                 sh "kubectl apply -f K8S_Deployment.yaml"
