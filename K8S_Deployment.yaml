@@ -23,7 +23,8 @@ spec:
       containers:
       - image: dchung1990/rest-api
         name: rest-api
-        env: imagePullPolicy: Never
+        env: 
+          - imagePullPolicy: Never
 ---
 apiVersion: v1
 kind: Service
