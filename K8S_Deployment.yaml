@@ -25,7 +25,6 @@ spec:
         name: rest-api
         imagePullPolicy: Never
         dnsPolicy: ClusterFirst
-        restartPolicy: Always
 ---
 apiVersion: v1
 kind: Service
