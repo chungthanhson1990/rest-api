@@ -23,8 +23,8 @@ spec:
       containers:
       - image: dchung1990/rest-api
         name: rest-api
-        imagePullPolicy: Never
-        dnsPolicy: ClusterFirst
+        env:
+          imagePullPolicy: Never
 ---
 apiVersion: v1
 kind: Service
