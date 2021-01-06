@@ -23,8 +23,9 @@ spec:
       containers:
       - image: dchung1990/rest-api
         name: rest-api
-      dnsPolicy: ClusterFirst
-      restartPolicy: Always
+        imagePullPolicy: Never
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
 ---
 apiVersion: v1
 kind: Service
