@@ -23,7 +23,7 @@ spec:
       imagePullSecrets:
       - name: codefresh-generated-docker.io-rest-api-default
       containers:
-      - image: dchung1990/rest-api
+      - image: dchung1990/rest-api:latest
         name: rest-api
         imagePullPolicy: Always
 ---
