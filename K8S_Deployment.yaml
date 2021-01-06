@@ -1,3 +1,4 @@
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -25,6 +26,7 @@ spec:
       dnsPolicy: ClusterFirst
       restartPolicy: Always
 ---
+apiVersion: apps/v1
 kind: Service
 metadata:
   labels:
