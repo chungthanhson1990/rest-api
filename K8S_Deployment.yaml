@@ -20,7 +20,7 @@ spec:
       labels:
         app: rest-api
     spec:
-      imagePullSecret:
+      imagePullSecrets:
       - name: codefresh-generated-docker.io-rest-api-default
       containers:
       - image: dchung1990/rest-api
